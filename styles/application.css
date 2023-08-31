@@ -47,7 +47,6 @@ h2 {
 
 .hero p {
   font-size: 36px;
-  color: #272142;
   font-weight: bold;
   margin: 0;
 }
@@ -95,12 +94,21 @@ h2 {
 }
 
 .btn-branding-outline {
-  padding: 18px 30px;
+  padding: 15px 25px;
   border-radius: 4px;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 27px;
   color: var(--branding-color);
   border: 1px solid var(--branding-color);
+}
+
+.btn-branding-outline:hover {
+  color: white;
+  background-color: var(--branding-color);
+}
+
+.alt-color {
+  color: var(--branding-color);
 }
 
 .content-container h1 {
@@ -156,27 +164,44 @@ h2 {
   color: var(--branding-color);
 }
 
-.email-icon {
+.hero .email-icon {
   position: relative;
   bottom: -100px;
 }
 
-.instagram-icon {
+.hero .instagram-icon {
   position: relative;
   bottom: -150px;
 }
 
-.linkedin-icon {
+.hero .linkedin-icon {
   position: relative;
   bottom: -200px;
 }
 
-.github-icon {
+.hero .github-icon {
   position: relative;
   bottom: -250px;
 }
 
+.email {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.email:hover {
+  color: var(--branding-color);
+}
+.email-link {
+  text-align: center;
+  padding-top: 75px;
+  font-size: 18px;
+}
+
 @media (max-width: 900px) {
+  .body-content {
+    margin: 25px;
+  }
   h1 {
     font-size: 44px;
     line-height: 56px;
@@ -194,21 +219,51 @@ h2 {
   }
 
   .hero {
-    padding: 80px 20px;
+    padding: 100px 20px;
     line-height: 1.5;
   }
-
+  .hero .intro {
+    margin: 0;
+  }
+  .hero p {
+    font-size: 25px;
+  }
+  .intro-img {
+    margin: 40px 0px;
+  }
   .content {
     text-align: center;
+    padding-top: 20px;
   }
   .content h1 {
     font-size: 44px;
     line-height: 56px;
+    margin: 0 !important;
   }
   .content-container {
     padding-top: 0;
+    margin: 0;
   }
   .content h2 {
     line-height: 30px;
+  }
+  .email-icon {
+    position: static !important;
+  }
+
+  .instagram-icon {
+    position: static !important;
+  }
+
+  .linkedin-icon {
+    position: static !important;
+  }
+
+  .github-icon {
+    position: static !important;
+  }
+
+  .email-link {
+    padding: 0;
   }
 }
