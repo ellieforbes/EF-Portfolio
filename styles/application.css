@@ -41,8 +41,12 @@ h2 {
 .hero {
   background-color: var(--background-color);
   text-align: center;
-  padding: 30px 20px;
+  padding: 10px 20px;
   border-radius: 50px;
+}
+
+.logo {
+  max-width: 40px;
 }
 
 .hero p {
@@ -69,7 +73,7 @@ h2 {
 }
 
 .home-projects {
-  background-color: white;
+  background-color: var(--background-color);
   padding: 20px;
   display: block;
   margin: 0 auto;
@@ -134,7 +138,7 @@ h2 {
 
 .content {
   margin: 50px;
-  background-color: white;
+  background-color: transparent;
   border-radius: 50px;
   padding: 0px 20px;
 }
@@ -171,25 +175,25 @@ h2 {
 }
 .social-icons {
   font-size: 35px;
-  color: var(--branding-color);
+  color: var(--branding-color) !important;
 }
 
-.hero .email-icon {
+.email-icon {
   position: relative;
   bottom: -100px;
 }
 
-.hero .instagram-icon {
+.instagram-icon {
   position: relative;
   bottom: -150px;
 }
 
-.hero .linkedin-icon {
+.linkedin-icon {
   position: relative;
   bottom: -200px;
 }
 
-.hero .github-icon {
+.github-icon {
   position: relative;
   bottom: -250px;
 }
@@ -210,6 +214,27 @@ h2 {
 .featured-projects h2 {
   font-size: 50px;
 }
+
+.contact-links {
+  text-align: center;
+}
+.contact-link:hover {
+  cursor: pointer;
+  color: var(--branding-color) !important;
+}
+
+.social-icons i {
+  color: var(--branding-color);
+  border-radius: 50%;
+  padding: 10px 14px;
+  transition: all 100ms ease-in-out;
+}
+.social-icons i:hover {
+  color: white;
+  background-color: var(--branding-color);
+  cursor: pointer;
+}
+
 @media (max-width: 900px) {
   .body-content {
     margin: 25px;
@@ -231,7 +256,7 @@ h2 {
   }
 
   .hero {
-    padding: 100px 20px;
+    padding: 10px 20px;
     line-height: 1.5;
   }
   .hero .intro {
@@ -246,6 +271,7 @@ h2 {
   .content {
     text-align: center;
     padding-top: 20px;
+    margin: 20px;
   }
   .content h1 {
     font-size: 44px;
@@ -253,8 +279,9 @@ h2 {
     margin: 0 !important;
   }
   .content-container {
-    padding-top: 0;
-    margin: 0;
+    padding-top: 10px;
+    margin: 20px;
+    text-align: center;
   }
   .content h2 {
     line-height: 30px;
@@ -277,5 +304,13 @@ h2 {
 
   .email-link {
     padding: 0;
+  }
+
+  .about-me {
+    text-align: center;
+    padding: 30px;
+  }
+  .about-img {
+    position: static !important;
   }
 }
