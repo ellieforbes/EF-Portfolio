@@ -235,6 +235,23 @@ h2 {
   cursor: pointer;
 }
 
+#copyright {
+  text-align: center;
+  background-color: black;
+  color: var(--branding-color);
+  padding: 10px;
+}
+
+#copyright a {
+  text-decoration: none;
+  color: white;
+}
+
+#copyright a:hover {
+  color: #d5c9f6;
+  cursor: pointer;
+}
+
 @media (max-width: 900px) {
   .body-content {
     margin: 25px;
