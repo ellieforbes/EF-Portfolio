@@ -297,7 +297,7 @@ h2 {
   }
   .content-container {
     padding-top: 10px;
-    margin: 20px;
+    margin: 20px !important;
     text-align: center;
   }
   .content h2 {
